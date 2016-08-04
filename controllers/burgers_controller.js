@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var cat = require('../models/burger.js');
+var burger = require('../models/burger.js');
 
 router.get('/', function (req, res) {
   res.redirect('/burgers');
@@ -15,7 +15,7 @@ router.get('/burgers', function (req, res) {
 });
 
 router.post('/burgers/create', function (req, res) {
-  burger.create(['name', 'sleepy'], [req.body.name, req.body.sleepy], function () {
+  burger.create(['burger_name'], [req.body.burger_name], function () {
     res.redirect('/burgers');
   });
 });
@@ -25,7 +25,8 @@ router.put('/burgers/update/:id', function (req, res) {
 
   console.log('condition', condition);
 
-  burger.update({ sleepy: req.body.sleepy }, condition, function () {
+  var setCol = 'devoured = ' + req.body.devoured;
+  burger.update(setCol, condition, function (data) {
     res.redirect('/burgers');
   });
 });

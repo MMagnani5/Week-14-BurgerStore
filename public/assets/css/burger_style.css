@@ -1,0 +1,44 @@
+li {
+  
+  margin: 5px;
+  padding: 5px;
+  color: blue;
+  font-size: 30px;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.create-update-form {
+
+  margin: 5px;
+  padding: 5px;
+  color: red;
+  font-size: 20px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+body {
+  background-image: url("https://media.timeout.com/images/102945700/image.jpg");
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+h2{
+  color: white;
+}
+
+button{
+  background-color: red;
+  font-size: 16px;
+  color: white;
+}
+
