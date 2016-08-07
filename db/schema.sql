@@ -8,6 +8,6 @@ CREATE TABLE burgers
   id int NOT NULL AUTO_INCREMENT,
   burger_name varchar(255) NOT NULL,
   devoured BOOLEAN DEFAULT false,
-  createdDate TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  createdDate TIMESTAMP,
   PRIMARY KEY (id)
 );

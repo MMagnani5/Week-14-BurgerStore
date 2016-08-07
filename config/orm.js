@@ -55,13 +55,15 @@ var orm = {
   update: function (table, objColVals, condition, cb) {
     var queryString = 'UPDATE ' + table;
 
-    queryString = queryString + ' SET ';
-    queryString = queryString + objToSql(objColVals);
+    queryString = queryString + ' SET';
+    queryString = queryString + ' devoured = ?';
     queryString = queryString + ' WHERE ';
     queryString = queryString + condition;
+    console.log(condition);
 
-    console.log(queryString);
-    connection.query(queryString, function (err, result) {
+    console.log("orm update " + queryString);
+    connection.query(queryString, [1], function (err, result) {
+      console.log(result);
       if (err) throw err;
       cb(result);
     });
