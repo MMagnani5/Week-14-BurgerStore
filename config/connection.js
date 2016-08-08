@@ -4,22 +4,22 @@ var mysql = require('mysql');
 
 
 var source = {
-localhost:{
-      port: 3306,
-      host: 'localhost',
-      user: 'root',
-      password: 'yankeesny2',
-      database: 'burgers_db'
-},
+        localhost:{
+            port: 3306,
+            host: 'localhost',
+            user: 'root',
+            password: 'yankeesny2',
+            database: 'burgers_db'
+      },
 
-jawsDB : {
-      port: 3306,
-      host: 'gx97kbnhgjzh3efb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-      user: 'fd0r4x62zbopr9bf',
-      password: 'o99whq4e23bbi6gt',
-      database: 'burgers_db'
+      jawsDB : {
+            port: 3306,
+            host: 'gx97kbnhgjzh3efb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+            user: 'fd0r4x62zbopr9bf',
+            password: 'o99whq4e23bbi6gt',
+            database: 'burgers_db'
 
-  }
+        }
   
 }
 
