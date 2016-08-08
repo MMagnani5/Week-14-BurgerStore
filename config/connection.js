@@ -17,7 +17,7 @@ var source = {
             host: 'gx97kbnhgjzh3efb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
             user: 'fd0r4x62zbopr9bf',
             password: 'o99whq4e23bbi6gt',
-            database: 'burgers_db'
+            database: '`sk4ik88keyx8iyfx`'
 
         }
   
