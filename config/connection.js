@@ -15,8 +15,8 @@ localhost:{
 jawsDB : {
       port: 3306,
       host: 'gx97kbnhgjzh3efb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-      user: 'obk9qral5gv9lwys',
-      password: 'rxktd5he3n99t5jt',
+      user: 'fd0r4x62zbopr9bf',
+      password: 'o99whq4e23bbi6gt',
       database: 'burgers_db'
 
   }

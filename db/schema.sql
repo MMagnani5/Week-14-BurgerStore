@@ -1,7 +1,7 @@
 ### Schema
-
 CREATE DATABASE burgers_db;
 USE burgers_db;
+
 
 CREATE TABLE burgers
 (
@@ -11,3 +11,5 @@ CREATE TABLE burgers
   createdDate TIMESTAMP,
   PRIMARY KEY (id)
 );
+
+
